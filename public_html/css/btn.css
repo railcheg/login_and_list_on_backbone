@@ -1,0 +1,229 @@
+/* gradient */
+/* opacity */
+/* box shadow */
+/* text shadow */
+/* box sizing */
+/* border radius */
+/* column */
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.btn {
+  height: 30px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: 'Roboto', Arial, sans-serif;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn[disabled] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  cursor: default;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.btn-sm {
+  height: 30px;
+}
+.btn.addBtn {
+  margin: 0 0 0 10px;
+}
+.btn_done {
+  background: transparent!important;
+  line-height: 30px;
+}
+.btn-transp-white {
+  height: 38px;
+  padding: 0 25px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-transp-white:hover {
+  color: #ffffff;
+}
+.btn-transp-blue {
+  height: 38px;
+  line-height: 37px;
+  padding: 0 25px;
+  font-size: 0.875rem;
+  color: #1a8ce7;
+  background: transparent;
+  border: 1px solid #1a8ce7;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-transp-blue:hover {
+  opacity: 0.6;
+}
+.btn-new {
+  height: 36px;
+  font-size: 0.875rem;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+.btn-show-map {
+  margin-top: 9px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 0.875rem;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+.btn-logout {
+  float: right;
+  border-color: #cee3fb;
+  margin: 13px 0 0;
+}
+.btn-createCompany {
+  display: block;
+  margin: 0 auto 50px;
+}
+.btn-ok,
+.btn-cancel {
+  height: 55px;
+  background: transparent;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 10px;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.btn-ok:hover,
+.btn-cancel:hover,
+.btn-ok:focus,
+.btn-cancel:focus {
+  opacity: .6;
+}
+.btn-ok[disabled],
+.btn-cancel[disabled] {
+  color: #a3a3a3;
+  opacity: 1!important;
+  cursor: default;
+}
+.btn-ok {
+  color: #00aeef;
+}
+.btn-cancel {
+  color: #000;
+}
+.btn-activate-blue {
+  background: #00b0ff;
+  padding: 0 18px;
+}
+.btn-activate-blue:hover,
+.btn-activate-blue:focus {
+  background: #0285df;
+}
+.btn-activate-green {
+  background: #00bfa5;
+  padding: 0 18px;
+  margin-bottom: 6px;
+}
+.btn-activate-green:hover,
+.btn-activate-green:focus {
+  background: #03a891;
+}
+.btn-upload-green {
+  position: relative;
+  float: right;
+  width: 215px;
+  padding: 0;
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 50px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.24);
+}
+.btn-upload-greenIcon {
+  font-size: 11px;
+  color: #fff;
+  padding-right: 10px;
+}
+.btn-upload-green > * {
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+.btn-upload-green.loading2 {
+  cursor: default;
+}
+.btn-upload-green.loading2:hover {
+  background: #34b162;
+}
+.btn-upload-green.loaded {
+  cursor: default;
+}
+.btn-upload-green.loaded:hover {
+  background: #34b162;
+}
+.btn-del {
+  margin: 24px 0 0;
+}
+.red-btn {
+  background: #ff6268;
+}
+.red-btn.btn_done {
+  color: #ff6268;
+}
+.red-btn:hover,
+.red-btn:focus {
+  background: #e63456;
+}
+.blue-btn {
+  background: #00aeef;
+}
+.blue-btn.btn_done {
+  color: #00aeef;
+}
+.blue-btn:hover,
+.blue-btn:focus {
+  background: #0285df;
+}
+.green-btn {
+  background: #34b162;
+}
+.green-btn.btn_done {
+  color: #34b162;
+}
+.green-btn:hover,
+.green-btn:focus {
+  background: #269d52;
+}
+.yellow-btn {
+  background: #ffc64c;
+}
+.yellow-btn.btn_done {
+  color: #ffc64c;
+}
+.yellow-btn:hover,
+.yellow-btn:focus {
+  background: #faa940;
+}
+
+/*# sourceMappingURL=map/btn.css.map */

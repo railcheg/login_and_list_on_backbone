@@ -1,0 +1,211 @@
+/* gradient */
+/* opacity */
+/* box shadow */
+/* text shadow */
+/* box sizing */
+/* border radius */
+/* column */
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.modal-open {
+  overflow: hidden!important;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #0d0d0e;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.in {
+  opacity: .3;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  overflow: auto;
+  text-align: center;
+  padding: 10px;
+}
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+.modal__dialog {
+  width: 94%;
+  z-index: 1050;
+  max-width: 1080px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  background: #fff;
+  padding: 28px 55px 10px 30px;
+  -webkit-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  min-width: 768px;
+}
+.modal__dialog-sm {
+  max-width: 950px;
+}
+.modal__dialog-w320 {
+  min-width: 0;
+  max-width: 320px;
+}
+.modal__dialog-w430 {
+  min-width: 0;
+  max-width: 430px;
+}
+.modal__dialog-noBg {
+  background: none;
+  -webkit-box-shadow: none none none none;
+  box-shadow: none none none none;
+  padding: 0;
+}
+.modal__bg {
+  background: #fff;
+  padding: 20px 55px 20px 30px;
+  -webkit-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+}
+.modal__title {
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+}
+.modal__row {
+  margin-bottom: 20px;
+}
+.modal__row.mbLg {
+  margin-bottom: 40px;
+}
+.modal__heading {
+  color: #a3a3a3;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.modal__loaded .modal__dialog {
+  text-align: center;
+  padding: 45px 20px 27px;
+  color: #191a1b;
+  font-size: 14px;
+  line-height: 22px;
+}
+.modal__loaded .btn {
+  margin: 35px 10px 0;
+  min-width: 95px;
+  text-align: center;
+}
+.modal__code {
+  overflow: hidden;
+}
+.modal__code .btn {
+  float: right;
+  margin-bottom: 0;
+}
+.modal__codeInfo {
+  float: left;
+}
+.modal__codeLabel {
+  color: #a7a7a7;
+  font-size: 0.6875rem;
+  margin: 0 0 10px;
+}
+.modal__codeText {
+  color: #48484a;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+.editOwner .modal__dialog {
+  position: relative;
+}
+.editOwner .customPlaceholder.filled {
+  top: 17px!important;
+}
+.editOwner .bottom__btns {
+  margin-top: 40px;
+}
+.corporate__box {
+  max-height: 0;
+  overflow: hidden;
+}
+.editHome .customLabel {
+  width: 150px;
+}
+.editSettingsNoa .modal__dialog {
+  position: relative;
+  margin-bottom: 180px;
+}
+.modal__separate {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  padding: 30px 60px 20px;
+}
+.modal__separate.h160 {
+  height: 160px;
+  bottom: -180px;
+}
+.modal__separateTitle {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 9px;
+}
+.modal__status {
+  margin-bottom: 20px;
+}
+.modal__statusIcon {
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 18px;
+}
+.modal__statusIcon.green {
+  color: #34b162;
+}
+.modal__statusIcon.yellow {
+  color: #ffc64c;
+}
+.modal__statusIcon.red {
+  color: #ff6268;
+}
+.modal__statusText {
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modal__list {
+  text-align: left;
+  margin: 15px 0 20px;
+  list-style-type: disc;
+  padding-left: 15px;
+}
+.modal__listTitle {
+  font-size: 14px;
+  margin: 15px 0 0;
+  text-align: left;
+}
+.modal__listItem {
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=map/modal.css.map */

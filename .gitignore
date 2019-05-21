@@ -1,0 +1,12 @@
+public_html/jpg/
+.buildpath
+.project
+.settings/
+.idea
+public_html/js/config.js
+public_html/js/**/compile/*
+\!documents
+node_modules
+public_html/js/build/
+public_html/build/app-build.js
+public_html/build/app-build.min.css

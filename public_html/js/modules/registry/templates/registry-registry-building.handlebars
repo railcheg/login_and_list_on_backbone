@@ -1,0 +1,122 @@
+{{#if isOneBuilding}}
+    <div class="ownersNew__head heading__box __hoaOwners_headerActions bb_units_header">
+        <div class="heading pull-left pr-10" style="font-size: 1rem">Данные о недвижимости</div>
+    </div>
+{{else}}
+    <br>
+    <div class="ownersNew__head heading__box __hoaOwners_headerActions bb_units_header">
+        <div class="heading pull-left pr-10" style="font-size: 1rem">Дом <span class="bb_index">{{index}}</span></div>
+        {{#ifCond houses_type 'town' '==='}}
+            <span class="bb_street">{{street}}</span> д. <span class="bb_house">{{house}}</span><span class="bb_unit">{{#if unit}}К{{unit}}{{/if}}</span>
+        {{/ifCond}}
+    </div>
+{{/if}}
+
+
+<div class="ownersNew__body">
+    <div class="ownersNew__btns">
+        <input name="template" type="file" class="bb_file_input none">
+
+        <button class="btn-ok fl_r bb_save">Сохранить</button>
+        <button class="btn-cancel fl_r bb_upload_file">Подгрузить реестр</button>
+        <button class="btn-ok fl_l bb_download_registry">Скачать реестр</button>
+    </div>
+    <div class="ownersNew">
+
+        <div class="ownersNew__line ownersNew__line_heading">
+            {{#ifCond houses_type 'town' '==='}}
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">№ квартиры, помещения</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Площадь, м2</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Тип</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Подъезд</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Этаж</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Доля  собств.</span>
+                </div>
+            {{else}}
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">№ квартиры, помещения</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">№ дома</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Корпус</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Улица</span>
+                </div>
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Тип</span>
+                </div>
+            {{/ifCond}}
+
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Тип</span>
+            </div>
+
+            {{#ifCond structure_type 'other' '!=='}}
+                <div class="ownersNew__td">
+                    <span class="bb_selected_text">Участник  ТСЖ</span>
+                </div>
+            {{/ifCond}}
+
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Фамилия</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Имя</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Отчество</span>
+            </div>
+
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Номер документа</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Вид документа</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Дата выдачи</span>
+            </div>
+
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Правовая  форма</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Название</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">ИНН</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Телефон</span>
+            </div>
+            <div class="ownersNew__td">
+                <span class="bb_selected_text">Эл. адрес</span>
+            </div>
+        </div>
+        <div class="index__wrap bb_table_wrap">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

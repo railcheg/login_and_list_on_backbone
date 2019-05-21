@@ -1,0 +1,47 @@
+/*MOBILE*/
+.mobile body{
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*TABLET*/
+.tablet body{
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.mobile body.modal-open,
+.tablet body.modal-open{
+	position: fixed;
+	bottom:0;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.ios input,
+.ios textarea{
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+/*1280 - */
+@media (min-width:1280px) {}
+
+/*1024 to 1200*/
+@media (min-width:1024px) and (max-width: 1200px) {}
+
+/*-----------------768 to 1023--------------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+	.modal:before               {content: none;}
+}
+
+/*------------------... to 767--------------*/
+@media (max-width: 767px) {}
+
+/*------------------... to 1023--------------*/
+@media (max-width: 1023px) {
+	.modal:before               {content: none;}
+}
+
+/*----------------------480 to 767--------------*/
+@media (min-width: 375px) and (max-width: 767px) {}

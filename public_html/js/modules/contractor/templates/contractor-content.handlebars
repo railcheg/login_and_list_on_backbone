@@ -1,0 +1,122 @@
+<div class="wrapper">
+	<header class="header header-pf">
+        <div class="header__top">
+            <div class="box">
+                <button class="slideMenu__trigger bb_slider">
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </button>
+
+                <div class="header__title">{{name}}</div>
+                <button class="logout btn btn-transp-white btn-logout bb-logout-btn">Logout</button>
+                <span class="user__name">{{user.username}}</span>
+                <div class="slideMenu">
+                    <div class="slideMenu__in">
+                        <ul class="slideMenu__list">
+                            <li class="slideMenu__item">
+                                <a href="" class="slideMenu__link bb_hoa_list">
+                                    <span class="slideMenu__icon icon-list"></span>
+                                    <span class="slideMenu__text ">Список ТСЖ</span>
+                                </a>
+                            </li>
+                            <li class="slideMenu__item">
+                                <a href="" class="slideMenu__link bb_contractors_list">
+                                    <span class="slideMenu__icon icon-person"></span>
+                                    <span class="slideMenu__text">Подрядчики</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+    <section class="content">
+        <div class="box">
+            <div class="tabContent tab-content">
+                <div class="tab tab-pane fade in active" id="managementCompany">
+                    <div class="company_sel__pic">
+                        {{#if avatar}}
+                            <img src="{{avatar}}" alt="">
+                        {{else}}
+                        <img src="images/def_logo-lg.jpg" alt="">
+                        {{/if}}
+                        <!--<img src="images/img_cont/1.jpg" alt=""/>-->
+                    </div>
+                    <div class="company_sel__title">
+                        {{name}}
+                    </div>
+                    <div class="heading">
+                        Контактные лица подрядчика
+                    </div>
+                    <div class="main main_sel ">
+                        <div class="main__line main__line_title">
+                            <div class="main__sel_name bb_sort_employee" data-sort-property="name" data-direction="">
+                                <div class="main__line_titleIn">
+                                    Имя пользователя
+                                </div>
+                                <div class="sortWrap">
+                                    <span class="sortIcon icon-arrow-up bb_sort_up"></span>
+                                    <span class="sortIcon icon-arrow-down bb_sort_down"></span>
+                                </div>
+                            </div>
+                            <div class="main__sel_email bb_sort_employee" data-sort-property="email" data-direction="">
+                                <div class="main__line_titleIn">
+                                    E-mail
+                                </div>
+                                <div class="sortWrap">
+                                    <span class="sortIcon icon-arrow-up bb_sort_up"></span>
+                                    <span class="sortIcon icon-arrow-down bb_sort_down"></span>
+                                </div>
+                            </div>
+                            <div class="main__sel_phone bb_sort_employee" data-sort-property="phone" data-direction="">
+                                <div class="main__line_titleIn">
+                                    телефон
+                                </div>
+                                <div class="sortWrap">
+                                    <span class="sortIcon icon-arrow-up bb_sort_up"></span>
+                                    <span class="sortIcon icon-arrow-down bb_sort_down"></span>
+                                </div>
+                            </div>
+                            <div class="main__sel_career bb_sort_employee" data-sort-property="position" data-direction="">
+                                <div class="main__line_titleIn">
+                                    Должность
+                                </div>
+                                <div class="sortWrap">
+                                    <span class="sortIcon icon-arrow-up bb_sort_up"></span>
+                                    <span class="sortIcon icon-arrow-down bb_sort_down"></span>
+                                </div>
+                            </div>
+                            <div class="main__sel_code bb_sort_employee" data-sort-property="registration_code" data-direction="">
+                                <div class="main__line_titleIn">
+                                    Рег.код
+                                </div>
+                                <div class="sortWrap">
+                                    <span class="sortIcon icon-arrow-up bb_sort_up"></span>
+                                    <span class="sortIcon icon-arrow-down bb_sort_down"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bb_employees"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="plus__panel "  >
+        <div class="plus__btns">
+            <button class="plus_sm plus_sm-green bb_add_employee" data-toggle="tooltip" data-placement="left" title="" data-original-title="Добавить контактное лицо">
+                <span class="icon-add_employee plus_sm__icon" data-toggle="modal" data-target="#addContractorMember"></span>
+            </button>
+            <button class="plus_sm plus_sm-green2 bb_download_file" data-toggle="tooltip" data-placement="left" title="" data-original-title="Скачать список контактных лиц">
+                <span class="icon-download plus_sm__icon"></span>
+            </button>
+        </div>
+        <a href="" class="plus plus-lila bb_edit_contractor" data-toggle="tooltip" data-placement="left" title="" data-original-title="Изменить подрядчика">
+            <!--<span class="icon-edit plus__icon"></span>-->
+            <span class="icon-edit plus__icon plus__icon-action plus__icon-action-start"></span>
+            <span class="icon-edit_2 plus__icon plus__icon-action plus__icon-action-end"></span>
+        </a>
+    </div>
+</div>

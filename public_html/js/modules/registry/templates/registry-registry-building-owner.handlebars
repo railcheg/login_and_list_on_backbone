@@ -1,0 +1,197 @@
+{{#if isEdit}}
+    <div class="ownersNew__line_delBox">
+        <span class="ownersNew__line_delIcon icon-dots"></span>
+        <div class="ownersNew__line_funcWrap">
+            <a href="" class="ownersNew__line_delMenu bb_delete_line">
+                <span class="ownersNew__line_delMenuText">Удалить строку</span>
+                <span class="ownersNew__line_delMenuIcon icon-trash"></span>
+            </a>
+        </div>
+    </div>
+    {{#ifCond houses_type 'town' '==='}}
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="apartment" rows="1">{{apartment}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_float" name="total_area" rows="1">{{total_area}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <select class="bb_formstyler" name="property_usage_type">
+                <option value="living">Ж</option>
+                <option value="nonliving" {{#ifCond property_usage_type 'nonliving' '==='}}selected{{/ifCond}}>Н</option>
+            </select>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_integer" name="entrance_number" rows="1">{{entrance_number}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_integer" name="floor" rows="1">{{floor}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_float" name="ownership_percent" rows="1">{{ownership_percent}}</textarea>
+        </div>
+    {{else}}
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="apartment" rows="1">{{apartment}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="house" rows="1">{{house}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="unit"  rows="1">{{unit}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="street" rows="1">{{street}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <select class="bb_formstyler" name="property_usage_type">
+                <option value="living">Ж</option>
+                <option value="nonliving" {{#ifCond property_usage_type 'nonliving' '==='}}selected{{/ifCond}}>Н</option>
+            </select>
+        </div>
+    {{/ifCond}}
+    <div class="ownersNew__td">
+        <select class="bb_formstyler" name="is_juristic_person">
+            <option value="not_juristic_person">Ф</option>
+            <option value="juristic_person" {{#if is_juristic_person}}selected{{/if}}>Ю</option>
+        </select>
+    </div>
+    {{#ifCond structure_type 'other' '!=='}}
+        <div class="ownersNew__td">
+            <select class="bb_formstyler" name="is_hoa_member">
+                <option value="is_hoa_member">член тсж</option>
+                <option value="is_not_hoa_member" {{#unless is_hoa_member}}selected{{/unless}}>не член тсж</option>
+            </select>
+        </div>
+    {{/ifCond}}
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="last_name" rows="1">{{last_name}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="first_name" rows="1">{{first_name}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="middle_name" rows="1">{{middle_name}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_number" rows="1">{{ownership_document_number}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_type" rows="1">{{ownership_document_type}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_issue_date" rows="1">{{ownership_document_issue_date}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        {{#if juristic_person_legal_form}}
+            <textarea class="autosized field_type2" name="juristic_person_legal_form" rows="1">{{juristic_person_legal_form}}</textarea>
+        {{else}}
+            {{#if legalFormValues}}
+                <select class="bb_formstyler none {{juristic_person_legal_form}}" name="juristic_person_legal_form">
+
+                </select>
+            {{else}}
+                <textarea class="autosized field_type2" name="juristic_person_legal_form" rows="1"></textarea>
+            {{/if}}
+        {{/if}}
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="juristic_person_name" rows="1">{{juristic_person_name}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="juristic_person_inn" rows="1">{{juristic_person_inn}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="phone" rows="1">{{phone}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="email" rows="1">{{email}}</textarea>
+    </div>
+{{else}}
+    {{#ifCond houses_type 'town' '==='}}
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="apartment" rows="1">{{apartment}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_float" name="total_area" rows="1">{{total_area}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <select class="bb_formstyler" name="property_usage_type">
+                <option value="living">Ж</option>
+                <option value="nonliving" {{#ifCond property_usage_type 'nonliving' '==='}}selected{{/ifCond}}>Н</option>
+            </select>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_integer" name="entrance_number" rows="1">{{entrance_number}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_integer" name="floor" rows="1">{{floor}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 bb_number_float" name="ownership_percent" rows="1">{{ownership_percent}}</textarea>
+        </div>
+    {{else}}
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="apartment" rows="1">{{apartment}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="house" rows="1">{{house}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="unit" rows="1">{{unit}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2" name="street" rows="1">{{street}}</textarea>
+        </div>
+        <div class="ownersNew__td">
+            <select class="bb_formstyler" name="property_usage_type">
+                <option value="living">Ж</option>
+                <option value="nonliving" {{#ifCond property_usage_type 'nonliving' '==='}}selected{{/ifCond}}>Н</option>
+            </select>
+        </div>
+    {{/ifCond}}
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="is_juristic_person" readonly>{{#if is_juristic_person}}Ю{{else}}Ф{{/if}}</textarea>
+    </div>
+
+    {{#ifCond structure_type 'other' '!=='}}
+        <div class="ownersNew__td">
+            <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="is_hoa_member" readonly>{{#if is_hoa_member}}член тсж{{else}}не член тсж{{/if}}</textarea>
+        </div>
+    {{/ifCond}}
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit {{#unless last_name}}bb_empty_owner{{/unless}}" rows="1" name="last_name" readonly>{{#if last_name}}{{last_name}}{{else}}{{#unless is_empty_apartment}}Неизвестный{{/unless}}{{/if}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit {{#unless last_name}}bb_empty_owner{{/unless}}" rows="1" name="first_name" readonly> {{#if last_name}}{{first_name}}{{else}}{{#unless is_empty_apartment}}собственник{{/unless}}{{/if}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="middle_name" readonly>{{middle_name}}</textarea>
+    </div>
+
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_number" rows="1" readonly>{{ownership_document_number}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_type" rows="1" readonly>{{ownership_document_type}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2" name="ownership_document_issue_date" rows="1" readonly>{{ownership_document_issue_date}}</textarea>
+    </div>
+
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="juristic_person_legal_form" readonly>{{juristic_person_legal_form}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="juristic_person_name" readonly>{{juristic_person_name}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="juristic_person_inn" readonly>{{juristic_person_inn}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="phone" readonly>{{phone}}</textarea>
+    </div>
+    <div class="ownersNew__td">
+        <textarea class="autosized field_type2 pointer bb_open_edit" rows="1" name="email" readonly>{{email}}</textarea>
+    </div>
+{{/if}}
